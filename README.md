@@ -77,10 +77,10 @@ Creating elk_logstash_1      ... done
 
 Check Elasticsearch 
 
-Elasticsearch: http://{IP}:9200/_cat/health?v
+Elasticsearch: http://{JENKINS_SERVER_IP}:9200/_cat/health?v
 
 Kibana setup:
 
-http://{IP}:5601/
+http://{JENKINS_SERVER_IP}:5601/
 
 Hit the “create” button to create the first index pattern. As the logs come from logstash, the index will have the pattern “logstash-*” where “*” will be any date like “logstash-2019.02.28 ”. Once done kibana will pick up logs and can hit “Discover” to see logs. 
